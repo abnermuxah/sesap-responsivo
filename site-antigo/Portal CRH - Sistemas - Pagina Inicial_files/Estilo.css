@@ -1,0 +1,68 @@
+/* Default CSS Stylesheet for a new Web Application project */
+
+
+A:link
+{
+	font:  smallcaption;
+    color: "#336699"; 
+	text-decoration:  none;
+	font-size:larger;
+
+}	
+		
+A:visited
+{
+	font: smallcaption; 
+	text-decoration: none;
+ 	color:	"#336699";
+	font-size:larger;
+	}	
+		
+A:active	{	
+	font: smallcaption; 
+   	text-decoration:	none;
+	color: "Black";
+	font-size:larger;
+	}	
+		
+A:hover
+{
+	color: "Black";
+   	font: smallcaption; 
+	text-decoration: none;
+	font-size:larger;
+}
+
+.B:hover 
+{
+ text-decoration:  underline;
+	font-size:larger;
+}
+
+
+.C:link { BACKGROUND: steelblue; COLOR: white; TEXT-DECORATION: none }
+.C:visited { BACKGROUND: steelblue; COLOR: white; TEXT-DECORATION: none }
+.C:active { BACKGROUND: steelblue; COLOR: white; TEXT-DECORATION: none }
+.C:hover { BACKGROUND: lightblue; COLOR: steelblue; TEXT-DECORATION: none }
+
+
+.Direita
+   {TEXT-ALIGN: right }	
+   
+.Esquerda
+   {TEXT-ALIGN: left }	
+
+.Centro
+   {TEXT-ALIGN: center }
+   
+.Justificado
+	{TEXT-ALIGN: justify }	
+   
+.Maiuscula
+ {text-transform :uppercase;	}
+	       
+.Maiuscula_Esquerda
+ {text-transform :uppercase; text-align: left}
+
+Maiuscula_Direita
+ {text-transform :uppercase; text-align: right}
