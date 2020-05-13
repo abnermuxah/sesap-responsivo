@@ -6,6 +6,7 @@
 img {
 	max-width: 100%;
 	display: block;
+	float: left
 }
 
 .header {
@@ -45,4 +46,9 @@ section{
 
 footer > a > img { 
 	height: 39px;
+}
+
+footer > p {
+	color: white;
+	float: left;
 }
