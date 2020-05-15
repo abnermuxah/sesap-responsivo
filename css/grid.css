@@ -1,3 +1,8 @@
+/*Visualizar a borda do container*/
+.container {
+	//border-style: ridge;
+}
+
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
@@ -53,7 +58,7 @@
 .grid-12 {
 	width: calc(100% - 20px);
 }
-
+/*
 @media (max-width: 739px) {
 	.container {
 		max-width: 300px;
@@ -65,5 +70,7 @@
 		float: none;
 	}
 }
+
+*/
 
 

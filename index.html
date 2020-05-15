@@ -1,40 +1,52 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Recursos Humanos CRH - Página Inicial</title>
+    <title>CRH - Página Inicial</title>
     <meta charset="utf-8">
     <!-- Estilo CSS/Grid  -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/grid.css">
+	<!-- Favicon-->
+	<link rel=icon href=img/rn-logo.png sizes="32x32" type="image/png">
   </head>
   <!-- Estrutura do site -->
   <body>
-	<header class="header container">
+	<header class="header">
+		<div class="container">
 		<div class="grid-6">
 			<a href="#"><img src="img/sus-logo.png"></a>
-			<h1>SESAP-RN </h1>
-			<h2>Coordenadoria de Recursos Humanos</h2>
+			<h1 class="titulo">SESAP-RN </h1>
+			<h2 class="sub-titulo">Coordenadoria de Recursos Humanos</h2>
 		</div>
 		<div class="grid-6">
-			<p> Login </p>
+			<br> <br> 
+			<h2> Area de Login </h2>
+			<br> <br> 
+		</div>
 		</div>
 	</header>
 	<!-- Menu de Navegação -->
-	<nav class="menu container">
-		<ul>
-			<li>
-				<a href="#"> Notícias </a>
-			</li>
-			<li>
-				<a href="#"> Área do Servidor </a>
-			</li>
-			<li>
-				<a href="#"> Tempo de Serviço </a>
-			</li>
-			<li>
-				<a href="#"> Sobre </a>
-			</li>
-		</ul>
+	<nav class="menu">
+		<div class="container">
+			<ul class="menu-nav">
+					<li>
+						<a href="#"> Notícias </a>
+					</li>
+					<li>
+						<a href="#"> Área do Servidor </a>
+					</li>
+					<li>
+						<a href="#"> Tempo de Serviço </a>
+					</li>
+					<li>
+						<a href="#"> Legislação </a>
+					</li>
+					<li>
+						<a href="#"> Links Úteis </a>
+					</li>
+			</ul>
+		</div>
+		
 	</nav>
 	
 
@@ -45,11 +57,17 @@
 	</section>
 	
 	<!-- Footer -->
-	<footer class="footer container">
-		<a href="http://www.rn.gov.br/" target="_blank"><img src="img/rn-logo.png"></a>
-		<p> Governo do Estado do Rio Grande do Norte <p>
-		<p> Sexta Feira, 13 de Maio de 2020 </p>
-		<a  href="#"> Links Uteis</a>
+	<footer class="footer">
+		<div class="container">
+			<div class="grid-5">
+				<a href="http://www.rn.gov.br/" target="_blank"><img class="brasao" src="img/rn-logo.png"></a>
+				<p> Governo do Estado do Rio Grande do Norte <p>
+			</div>
+			<div class="grid-7">
+				<p class=contato> Contato: (84) 3232-2666 | 3232-2839 </p>
+				<p class=contato"> hildeberto@rn.gov.br | crh-sesap@rn.gov.br<p>
+			</div>
+		</div>
 	</footer>
 	
   </body>

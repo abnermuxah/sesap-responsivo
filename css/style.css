@@ -1,13 +1,20 @@
+/*Pagina Incial (Geral)*/
 * {
 	box-sizing: border-box;
+	font-family: Arial;
+}
+/*Visualizar a borda das divs*/
+div {
+	//border-style: ridge;
 }
 
-/*Pagina Incial*/
 img {
 	max-width: 100%;
 	display: block;
 	float: left
 }
+
+/*Cabeçalho*/
 
 .header {
 	background: #0080c6;
@@ -16,39 +23,77 @@ header > div {
 	color: #fff;
 }
 
+.titulo {
+	display: block;
+    font-size: 2.25em;
+    font-weight: normal;
+	margin-left: 120px;
+}
+.sub-titulo {
+    font-weight: normal;
+}
+
 
 /*Pagina de Navegação*/
 .menu {
-	height: 50px;
 	background: #005aaa;
 }
 .menu ul li {
 	float: left;
-	display: inline-block;
+	display: inline-table;
 }
 
 /*Botao do Menu*/
+.menu-nav {
+	height: 20px;
+	padding-left: 0px
+}
+.menu-nav {
+	margin-block-start: 0;
+	margin-block-end:0;
+}
+
+.menu-nav > li > a {
+	font-size: 1.125em;
+	/*Tamanho do botao altura x largura em px*/
+	padding: 15px 50px;
+	/*Distancia esqueda do botao*/
+	margin-right: 20px
+}
 .menu a { 
 	text-decoration: none;
 	color: #fff;
 	padding: 15px 30px 15px 30px;
-	background: blue;
+	background: #004aac;
+	display: inline-block;
 }
 
-
+/*Seção de Contaudo*/
 section{
-	height: 300px;
+	height: 400px;
 }
 
 .footer {
 	background: #0080c6;
+	color: #fff;
+	
 }
 
-footer > a > img { 
-	height: 39px;
+.brasao {
+	max-width: 39px;
+	height: auto;
+	display: block;
+	margin-top: 0.5em;
+	margin-right: 0.5em;
 }
+
+
 
 footer > p {
 	color: white;
+	float: left;
+}
+.contato {
+	margin-right: 1.875em;
 	float: left;
 }
