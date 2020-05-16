@@ -1,8 +1,8 @@
-/*Visualizar a borda do container*/
+/*Visualizar a borda do container
 .container {
-	//border-style: ridge;
+	border-style: ridge;
 }
-
+*/
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
