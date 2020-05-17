@@ -33,7 +33,6 @@ header > div {
 .sub-titulo {
 	font-weight: normal;
 	margin-top: 10px;
-	position: absolute;	
 
 }
 
@@ -73,16 +72,34 @@ header > div {
 
 /*Seção de Conteudo*/
 .conteudo {
-	background:#ceedff;/
+	background:#ceedff;
+	min-height: 350px;
 }
-section{
-	height: 350px;
+/* Conteudo Titulo */
+.conteudo-titulo {
+
+	text-decoration: none;
+	color: #0060b6;
+	font-size: 1.15em;
+	font-weight: bold;	
 }
 
+
+/* Conteudo Texto */
+.conteudo-texto {
+	text-decoration: none;
+	color: #0060b6;
+	font-size: 1.125em;
+	margin-top: 1px;
+
+}
+
+
+
+/* Footer - Cabecalho */
 .footer {
 	background: #0080c6;
-	color: #fff;	
-	
+	color: #fff;
 }
 
 .brasao {
@@ -91,7 +108,6 @@ section{
 	display: block;
 	padding-top: 5px;
 	margin-right: 10px;
-	filter: drop-shadow(1px 1px 1px #fff);
 }
 
 

@@ -1,77 +1,88 @@
-<!DOCTYPE html>
-<html>
+<script type="text/javascript" language="JavaScript">
+	// Função que monta Mês, Dia, e Ano para exibir no HTML
+	// Declaração de Variaveis que receberam os valores:
 
-<head>
-	<title>CRH - Página Inicial</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<!-- Estilo CSS/Grid  -->
-	<link rel="stylesheet" type="text/css" href="css/menu.css">
-	<link rel="stylesheet" type="text/css" href="css/grid.css">
-	<!-- Favicon-->
-	<link rel=icon href=img/rn-logo.png sizes="32x32" type="image/png">
-</head>
-<!-- Estrutura do site -->
+	var now = new Date();
+	var hours = now.getHours();
+	var minutes = now.getMinutes();
+	var timeValue = "" + ((hours >12) ? hours -12 :hours)
 
-<body>
-	<!-- Menu de Navegação -->
-	<div class="menu">
-		<div class="container">
-			<nav class="menu-nav">
-					<a id="ativo" href="index.html" > Notícias </a>
-					<a href="#"> Área do Servidor </a>
-					<a href="#"> Tempo de Serviço </a>
-					<a href="legislacao.html"> Legislação </a>
-					<a href="sobre.html"> Sobre </a>
-			</nav>
-		</div>
+	//Tratamento quantidade de Digitos nos Minutos e exibi se é 
+	// dia ou noite, PM, AM.
 
-	</div>
+	timeValue += ((minutes < 10) ? ":0" : ":") + minutes
+	timeValue += (hours >= 12) ? " PM" : " AM"
+	timerRunning = true;
+	mydate = new Date();
+	myday = mydate.getDay();
+	mymonth = mydate.getMonth();
+	myweekday = mydate.getDate();
+	weekday = myweekday;
+	myyear = mydate.getYear();
+	year = myyear;
 
+	// Tratamento dos Dias da Semana
 
+	if(myday == 0)
+		day = " Domingo, "
 
+	else if(myday == 1)
+		day = " Segunda Feira, "
 
+	else if(myday == 2)
+		day = " Terça Feira, "
 
-</body>
+	else if(myday == 3)
+		day = " Quarta Feira, "
 
-</html>
+	else if(myday == 4)
+		day = " Quinta Feira, "
 
+	else if(myday == 5)
+		day = " Sexta Feira, "
 
-<!--
-*** Comentários ***
-0 - Header
-	<div> Esquerdo (Pagina Inicial)
-	0 Imagem (SUS)
-	1 Titulo (SESAP - RN)
-	2 Subtitulo (Coordenadoria de Recuros Humanos)
-	<div> Direito (Autenticacao)
-	3 Texto (Intranet)
-	4 Form (Categoria) 
-	5 Login (Numerico)
-	6 Senha (Password)
-	7 Botao (Entrar)
-1 - Menu 
-	0 - (Link) Noticias
-	1 - (Link) Area do Servidor
-	2 - (Link) Tempo de Serviço
-	3 - (Link) Sobre
+	else if(myday == 6)
+		day = " Sábado, "
 
-2 - Section (Notícias - Conteúdo Principal)
-	
-	0 - Mostrar Data Atual
+	//Tratamento dos Meses
 
-	1 - Noticia 1
-			Titulo
-				subtitulo
-	2 - Noticia 3 ...
-	3 - Noticia n
-	4 - (Link) Mais Notícias
-3 - Footer (Rodapé)
-	0 Imagem (Governo do RN)
-	1 Governo do Estado do Rio Grande do Norte | Dia, Mês e Ano | Links Uteis
-	
-	
-	http://servicos.searh.rn.gov.br/protocolo/ (BASEADO)
-	
+	if(mymonth == 0)
+		month = " de Janeiro de "
 
- --->
+	else if(mymonth ==1)
+		month = " de Fevereiro de "
+
+	else if(mymonth ==2)
+		month = " de Março de "
+
+	else if(mymonth ==3)
+		month = " de April de "
+
+	else if(mymonth ==4)
+		month = " de Maio de "
+
+	else if(mymonth ==5)
+		month = " de Junho de "
+
+	else if(mymonth ==6)
+		month = " de Julho de "
+
+	else if(mymonth ==7)
+		month = " de Agosto de "
+
+	else if(mymonth ==8)
+		month = " de Setembro de "
+
+	else if(mymonth ==9)
+		month = " de Outubro de "
+
+	else if(mymonth ==10)
+		month = " de Novembro de "
+
+	else if(mymonth ==11)
+		month = " de Dezembro de "
+
+	//Exibe na Pagina o Resultado concatenando(+) os valores
+
+	document.write( day + myweekday + month + year + " - " + timeValue);
+</script>
