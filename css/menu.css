@@ -37,6 +37,7 @@ header > div {
 
 }
 
+
 /*Pagina de Navegação*/
 .menu {
 	background: #005aaa;
@@ -49,16 +50,16 @@ header > div {
 
 .menu-nav a:hover {
 	background:  #0080c6;
-
 }
 /*botão ativo*/
 #ativo {
 	background: #0080c6;
-	border-bottom: #B59509 solid 4px;
+	border-bottom: white solid 2px;
 }
 
 
 /*Botao do Menu*/
+
 .menu-nav > a { 
 	text-decoration: none;
 	float: left;
@@ -71,17 +72,17 @@ header > div {
 	text-align: center;
 }
 
+
+
+
 /*Seção de Conteudo*/
-.conteudo {
-	background:#ceedff;/
-}
 section{
 	height: 350px;
 }
 
 .footer {
-	background: #0080c6;
-	color: #fff;	
+	background: #ceedff;
+	color: #005aaa;	
 	
 }
 
@@ -91,7 +92,6 @@ section{
 	display: block;
 	padding-top: 5px;
 	margin-right: 10px;
-	filter: drop-shadow(1px 1px 1px #fff);
 }
 
 
