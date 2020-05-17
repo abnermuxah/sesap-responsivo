@@ -69,8 +69,15 @@ header > div {
 	width: 15%;
 	text-align: center;
 }
+/*Data*/
+.data  {
+	color: #005aaa;
+	font-size: 1.125em;
+}
+
 
 /*Seção de Conteudo*/
+
 .conteudo {
 	background:#ceedff;
 	min-height: 350px;
