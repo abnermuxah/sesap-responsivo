@@ -1,129 +1,159 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>CRH - Página Inicial</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Estilo CSS/Grid  -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/grid.css" />
+    <!-- Favicon-->
+    <link rel=icon href=img/rn-logo.png sizes="32x32" type="image/png">
+    <script type="text/javascript">
+      // funcao que retorna a data no formato : (dia_semana, dia, mes e ano)
+      // exemplo: Quarta-Feira, 8 de Agosto de 2018
 
-<head>
-	<title>CRH - Página Inicial</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<!-- Estilo CSS/Grid  -->
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/grid.css">
-	<!-- Favicon-->
-	<link rel=icon href=img/rn-logo.png sizes="32x32" type="image/png">
-	<script type="text/javascript">
-		// funcao que retorna a data no formato : (dia_semana, dia, mes e ano)
-		// exemplo: Quarta-Feira, 8 de Agosto de 2018
-		
-		function formataData(data = new Date()) { 
-			var d_sem = data.getDay(); // Retorna o dia da semana (0 a 6)
-			var dia = data.getDate(); // Retorna o dia do mês (1 a 31)
-			var m = data.getMonth(); // Retorna o mes (0 a 11)
-			var ano = data.getFullYear(); // Retorna o ano (aaaa)
+      function formataData(data = new Date()) {
+        var d_sem = data.getDay(); // Retorna o dia da semana (0 a 6)
+        var dia = data.getDate(); // Retorna o dia do mês (1 a 31)
+        var m = data.getMonth(); // Retorna o mes (0 a 11)
+        var ano = data.getFullYear(); // Retorna o ano (aaaa)
 
-			var dia_sem, mes;
+        var dia_sem, mes;
 
-			// tratar o dia da semana
-			if (d_sem == 0)  dia_sem = "Domingo";
-			else if (d_sem == 1) dia_sem = "Segunda-Feira";
-			else if (d_sem == 2) dia_sem = "Terça-Feira";
-			else if (d_sem == 3) dia_sem = "Quarta-Feira";
-			else if (d_sem == 4) dia_sem = "Quinta-Feira";
-			else if (d_sem == 5) dia_sem = "Sexta-Feira";
-			else if (d_sem == 6) dia_sem = "Sábado";
-		
-			// tratar o mes
-			if (m == 0) mes = "Janeiro";
-			else if (m==1) mes = "Fevereiro";
-			else if (m==2) mes = "Março";
-			else if (m==3) mes = "Abril";
-			else if (m==4) mes = "Maio";
-			else if (m==5) mes = "Junho";
-			else if (m==6) mes = "Julho";
-			else if (m==7) mes = "Agosto";
-			else if (m==8) mes = "Setembro";
-			else if (m==9) mes = "Outubro";
-			else if (m==10) mes = "Novembro";
-			else if (m==11) mes = "Dezembro";
+        // tratar o dia da semana
+        if (d_sem == 0) dia_sem = "Domingo";
+        else if (d_sem == 1) dia_sem = "Segunda-Feira";
+        else if (d_sem == 2) dia_sem = "Terça-Feira";
+        else if (d_sem == 3) dia_sem = "Quarta-Feira";
+        else if (d_sem == 4) dia_sem = "Quinta-Feira";
+        else if (d_sem == 5) dia_sem = "Sexta-Feira";
+        else if (d_sem == 6) dia_sem = "Sábado";
 
-			return dia_sem+", "+dia+" de "+mes+" de "+ano;
-		
-		}
-		
-		window.onload = function(){
-		document.getElementById("localData").innerHTML = formataData();
-		};
-	</script>
-</head>
-<!-- Estrutura do site -->
-<body>
-	<header class="header">
-		<div class="container">
-			<!-- Logo + Titulo -->
-			<div class="grid-6">
-				<a href="index.html"><img class=logo src="img/sus-logo.png"></a>
-				<h1 class="titulo">SESAP-RN </h1>
-				<h2 class="sub-titulo">Coordenadoria de Recursos Humanos</h2>
-			</div>
-			<!-- Area de Login -->
-			<div class="grid-6">
-				<br> <br>
-				<h2> Area de Login </h2>
-				<br> <br>
-			</div>
-		</div>
-	</header>
-	<!-- Menu de Navegação -->
-	<div class="menu">
-		<div class="container">
-			<nav class="menu-nav">
-				<a id="ativo" href="index.html" > Notícias </a>
-				<a href="legislacao.html"> Legislação </a>
-				<a href="#" target="_blank"> Área do Servidor </a>
-				<a href="#" target="_blank"> Tempo de Serviço </a>
-				<a href="sobre.html"> Sobre </a>
-			</nav>
-		</div>
-	</div>
-	<!-- Seção de Conteudo -->
-	<section class="conteudo">
-		<div class="container">
-			
-			<!-- Secao que informa a data atual -->
-			<p class="data" id="localData"></p>
-			<!-- Conteudo Principal -->
-			<a class="conteudo-titulo" href="#"> 16/04/2020 - Escalas de Plantão "06/2020" liberadas para digitação </a>
-			<p class="conteudo-texto">Informamos às unidades SESAP que o sistema de escalas já está liberado para a digitação dos plantões de Junho/2020.</p>
-			
-			<a class="conteudo-titulo" href="#"> 18/03/2020 - Escalas de Plantão "05/2020" liberadas para digitação. </a>
-			<p class="conteudo-texto">Informamos às unidades SESAP que o sistema de escalas já está liberado para a digitação dos plantões de maio/2020.</p>
+        // tratar o mes
+        if (m == 0) mes = "Janeiro";
+        else if (m == 1) mes = "Fevereiro";
+        else if (m == 2) mes = "Março";
+        else if (m == 3) mes = "Abril";
+        else if (m == 4) mes = "Maio";
+        else if (m == 5) mes = "Junho";
+        else if (m == 6) mes = "Julho";
+        else if (m == 7) mes = "Agosto";
+        else if (m == 8) mes = "Setembro";
+        else if (m == 9) mes = "Outubro";
+        else if (m == 10) mes = "Novembro";
+        else if (m == 11) mes = "Dezembro";
 
-			<a class="conteudo-titulo" href="#"> 12/06/2018 - Listagens da Produtividade GREP MED (04/19) e SUS/SAD (05/19) liberadas para atesto das direções</a>
-			<p class="conteudo-texto">Solicitamos às Unidades que analisem e atestem, através de suas respectivas direções/coordenações, as Fichas Financeiras da Produtividade, GREP-MED abril/2019 e GREP´s SUS e SAD maio/2019, pelo sistema SEI. Atenciosamente,</p>
+        return dia_sem + ", " + dia + " de " + mes + " de " + ano;
+      }
 
-			<a class="conteudo-titulo" href="#"> 28/06/2017 - Erro na emissão de relatórios da Base ERGON/SEARH</a>
-			<p class="conteudo-texto">Informamos a todos os usuários do Portal RH que desde sexta feira (23/06) houve um problema na rede de comunicação entre as bases de dados CRH/SESAP e ERGON/SEARH, com isso nossos sistemas de RH estão temporariamente sem acesso a tais informações, os ...</p>
-			
-			<div class="container">
-				<div class="etiqueta">
-					<h3>Notícias</h3>
-					<a href="#">+</a>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- Footer/Rodape -->
-	<footer class="footer">
-		<div class="container">
-			<div class="grid-5">
-				<a href="http://www.rn.gov.br/" target="_blank"><img class="brasao" src="img/rn-logo.png"></a>
-				<p> Governo do Estado do Rio Grande do Norte</p>
-			</div>
-			<div class="grid-7">
-				<p class=contato> Contato: (84) 3232-2666 | 3232-2839 </p>
-				<p class=contato> hildeberto@rn.gov.br | crh-sesap@rn.gov.br</p>
-			</div>
-		</div>
-	</footer>
+      window.onload = function () {
+        document.getElementById("localData").innerHTML = formataData();
+      };
+    </script>
+  </head>
+  <!-- Estrutura do site -->
 
-</body>
+  <body>
+    <header class="header">
+      <div class="container">
+        <!-- Logo + Titulo -->
+        <div class="grid-6">
+          <a href="index.html"><img class="logo" src="img/sus-logo.png" /></a>
+          <h1 class="titulo">SESAP-RN</h1>
+          <h2 class="sub-titulo">Coordenadoria de Recursos Humanos</h2>
+        </div>
+        <!-- Area de Login -->
+        <div class="grid-6">
+          <br />
+          <br />
+          <h2>Area de Login</h2>
+          <br />
+          <br />
+        </div>
+      </div>
+    </header>
+    <!-- Menu de Navegação -->
+    <div class="menu">
+      <div class="container">
+        <nav class="menu-nav">
+          <a id="ativo" href="index.html"> Notícias </a>
+          <a href="legislacao.html"> Legislação </a>
+          <a href="#" target="_blank"> Área do Servidor </a>
+          <a href="#" target="_blank"> Tempo de Serviço </a>
+          <a href="sobre.html"> Sobre </a>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Seção de Conteudo -->
+    <section class="conteudo">
+      <div class="container">
+        <!-- Secao que informa a data atual -->
+        <p class="data" id="localData"></p>
+        <!-- Conteudo Principal -->
+        <a class="conteudo-titulo" href="#">
+          16/04/2020 - Escalas de Plantão "06/2020" liberadas para digitação
+        </a>
+        <p class="conteudo-texto">
+          Informamos às unidades SESAP que o sistema de escalas já está liberado
+          para a digitação dos plantões de Junho/2020.
+        </p>
+
+        <a class="conteudo-titulo" href="#">
+          18/03/2020 - Escalas de Plantão "05/2020" liberadas para digitação.
+        </a>
+        <p class="conteudo-texto">
+          Informamos às unidades SESAP que o sistema de escalas já está liberado
+          para a digitação dos plantões de maio/2020.
+        </p>
+
+        <a class="conteudo-titulo" href="#">
+          12/06/2018 - Listagens da Produtividade GREP MED (04/19) e SUS/SAD
+          (05/19) liberadas para atesto das direções</a
+        >
+        <p class="conteudo-texto">
+          Solicitamos às Unidades que analisem e atestem, através de suas
+          respectivas direções/coordenações, as Fichas Financeiras da
+          Produtividade, GREP-MED abril/2019 e GREP´s SUS e SAD maio/2019, pelo
+          sistema SEI. Atenciosamente,
+        </p>
+
+        <a class="conteudo-titulo" href="#">
+          28/06/2017 - Erro na emissão de relatórios da Base ERGON/SEARH</a
+        >
+        <p class="conteudo-texto">
+          Informamos a todos os usuários do Portal RH que desde sexta feira
+          (23/06) houve um problema na rede de comunicação entre as bases de
+          dados CRH/SESAP e ERGON/SEARH, com isso nossos sistemas de RH estão
+          temporariamente sem acesso a tais informações, os ...
+        </p>
+
+        <div class="container">
+          <div class="etiqueta">
+            <h3>Notícias</h3>
+            <a href="#">+</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer/Rodape -->
+    <footer class="footer">
+      <div class="container">
+        <div class="grid-5">
+          <a href="http://www.rn.gov.br/" target="_blank"
+            ><img class="brasao" src="img/rn-logo.png"
+          /></a>
+          <p>Governo do Estado do Rio Grande do Norte</p>
+        </div>
+        <div class="grid-7">
+          <p class="contato">Contato: (84) 3232-2666 | 3232-2839</p>
+          <p class="contato">hildeberto@rn.gov.br | crh-sesap@rn.gov.br</p>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

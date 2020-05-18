@@ -1,9 +1,9 @@
+
 /*Pagina Incial (Geral)*/
 * {
 	box-sizing: border-box;
 	font-family: Arial, sans-serif; 
 }
-/*Visualizar a borda das divs*/
 
 img {
 	max-width: 100%;
@@ -11,7 +11,8 @@ img {
 	float: left
 }
 
-/*Cabeçalho*/
+/*--- Cabeçalho | Header --- */
+
 
 .header {
 	background: #0080c6;
@@ -29,19 +30,46 @@ header > div {
 	font-weight: normal;
 	margin-left: 110px;
 	margin-bottom: 0px;
+	text-shadow: 0.1em 0.1em 0.1em #0059aa;
 }
 .sub-titulo {
 	font-weight: normal;
 	margin-top: 10px;
+	text-shadow: 0.1em 0.1em 0.1em #0059aa;
+}
+/* --- Área de Login ---*/
 
+/* Botoao de Seleção */
+.icon {
+  padding: 10px;
+  background: dodgerblue;
+  color: white;
+  min-width: 50px;
+	text-align: center;
+}
+/*Container do botao de login e senha*/
+.input-container {
+  display: -ms-flexbox; /* IE10 */
+  display: flex; 
+  width: 100%;
+  margin-bottom: 15px;
 }
 
+.input-field {
+  width: 230px;
+  padding: 10px;
+  outline: none;
+}
+.input-field:focus {
+  border: 2px solid dodgerblue;
+}
 /*Pagina de Navegação*/
 .menu {
 	background: #005aaa;
 }
 .menu-nav {
 	padding-left: 10px;
+	text-shadow: 0.1em 0.1em 0.1em #0059aa;
 }
 
 /*Quando o mouse passar pelo item do menu*/
@@ -54,6 +82,8 @@ header > div {
 #ativo {
 	background: #0080c6;
 	border-bottom: #B59509 solid 4px;
+	text-shadow: 0.1em 0.1em 0.1em #0059aa;
+
 }
 
 
@@ -134,6 +164,7 @@ header > div {
 }
 /* Footer - Cabecalho */
 .footer {
+	text-shadow: 0.1em 0.1em 0.1em #0059aa;
 	background: #0080c6;
 	color: #fff;
 }
