@@ -1,7 +1,6 @@
 
 /*Pagina Incial (Geral)*/
 * {
-	box-sizing: border-box;
 	font-family: Arial, sans-serif; 
 }
 
@@ -11,7 +10,6 @@ img {
 }
 
 /*--- Cabeçalho | Header --- */
-
 
 .header {
 	background: #0080c6;
@@ -25,7 +23,7 @@ header > div {
 
 .titulo {
 	display: block;
-    font-size: 2.25em;
+  font-size: 2.25em;
 	font-weight: normal;
 	margin-left: 110px;
 	margin-bottom: 0px;
@@ -37,11 +35,41 @@ header > div {
 	text-shadow: 0.1em 0.1em 0.1em #0059aa;
 }
 /* --- Área de Login ---*/
-
 /* Botoao de Seleção */
-
 /*Container do botao de login e senha*/
-
+.select {
+	margin: 10px 0;
+}
+/*Icones*/
+i {
+	background: #0059aa;
+	padding: 0.4375em;
+}
+/* input */
+input, select {
+	/* position: absolute;*/
+	padding: 4px 0;
+	font-size: 1em;
+	width:  200px;
+}
+select {
+	cursor: pointer;
+}
+/* Botao */
+button {
+	padding: 4px 10px;
+	font-size: 1em;
+	font-weight: bolder;
+	background: #2e8009;
+	color: #fff;
+	cursor: pointer;
+	border-width: 2px;
+	border-color: #0080c6;
+	text-shadow: 0.1em 0.1em 0.1em #0059aa;
+}
+button:hover {
+	background: #338C0A;
+}
 /*Pagina de Navegação*/
 .menu {
 	background: #005aaa;
