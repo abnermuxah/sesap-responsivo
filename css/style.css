@@ -7,7 +7,6 @@
 
 img {
 	max-width: 100%;
-	display: block;
 	float: left
 }
 
@@ -40,29 +39,9 @@ header > div {
 /* --- Área de Login ---*/
 
 /* Botoao de Seleção */
-.icon {
-  padding: 10px;
-  background: dodgerblue;
-  color: white;
-  min-width: 50px;
-	text-align: center;
-}
-/*Container do botao de login e senha*/
-.input-container {
-  display: -ms-flexbox; /* IE10 */
-  display: flex; 
-  width: 100%;
-  margin-bottom: 15px;
-}
 
-.input-field {
-  width: 230px;
-  padding: 10px;
-  outline: none;
-}
-.input-field:focus {
-  border: 2px solid dodgerblue;
-}
+/*Container do botao de login e senha*/
+
 /*Pagina de Navegação*/
 .menu {
 	background: #005aaa;
@@ -75,17 +54,15 @@ header > div {
 /*Quando o mouse passar pelo item do menu*/
 
 .menu-nav a:hover {
-	background:  #0080c6;
+	background:  #0071D4;
 
 }
 /*botão ativo*/
 #ativo {
-	background: #0080c6;
+	background: #0071D4;
 	border-bottom: #B59509 solid 4px;
 	text-shadow: 0.1em 0.1em 0.1em #0059aa;
-
 }
-
 
 /*Botao do Menu*/
 .menu-nav > a { 
@@ -93,7 +70,6 @@ header > div {
 	float: left;
 	color: #fff;
 	padding: 15px;
-	margin-right: 25px;
 	font-size: 1.125em;
 	background: #0060b6;
 	width: 15%;
@@ -105,7 +81,6 @@ header > div {
 	font-size: 1.125em;
 }
 
-
 /*Seção de Conteudo*/
 
 .conteudo {
@@ -114,7 +89,6 @@ header > div {
 }
 /* Conteudo Titulo */
 .conteudo-titulo {
-
 	text-decoration: none;
 	color: #0060b6;
 	font-size: 1.15em;
@@ -128,7 +102,6 @@ header > div {
 	color: #0060b6;
 	font-size: 1.125em;
 	margin-top: 1px;
-
 }
 
 /*Botao de noticias*/
@@ -162,6 +135,7 @@ header > div {
 	color: #fff;
 	text-decoration: none;
 }
+
 /* Footer - Cabecalho */
 .footer {
 	text-shadow: 0.1em 0.1em 0.1em #0059aa;
