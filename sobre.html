@@ -1,105 +1,90 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>CRH - Página Inicial</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Estilo CSS/Grid  -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/grid.css" />
+    <script type="text/javascript" src="js/data-atual.js"></script>
+    <script src="https://kit.fontawesome.com/cf1cf54ae0.js" crossorigin="anonymous"></script>
+    <!-- Favicon-->
+    <link rel=icon href=img/rn-logo.png sizes="32x32" type="image/png">
+  </head>
+  <!-- Estrutura do site -->
+  <body>
+    <header class="azul-padrao">
+      <div class="container">
+        <!-- Logo + Titulo -->
+        <div class="grid-6">
+          <a  href="index.html"><img class="logo-sus"  src="img/sus-logo.png" /></a>
+          <h1 class="titulo shadow txt-white">SESAP-RN</h1>
+          <h2 class="sub-titulo shadow txt-white">Coordenadoria de Recursos Humanos</h2>
+        </div>
+        <!-- Area de Login -->
+        <div class="grid-6 login">
+          <div class="select txt-white">
+            <i class="fas fa-list"></i> 
+            <select class="select" required name="" id="">
+              <option value="0" hidden >Selecione...</option>
+              <option value="3">Relatórios Ergon</option>
+              <option value="1">Controle de Processos</option>
+              <option value="6">Avaliação do Servidor</option>
+              <option value="4">Capacitação e Eventos</option>
+              <option value="5">Escalas de Plantão</option>
+              <option value="10">Gerenciamento</option>
+            </select>
+          </div>
+          
+          <div>
+            <i class="fas fa-user txt-white"></i>
+            <input type="text" placeholder="Usuário">
+          </div>
+          
+          <div style="display: inline-block;">
+            <i class="fas fa-lock txt-white"></i>
+            <input type="password" placeholder="Senha">
+          </div>
+					<div>
+          <button class="shadow" type="button">Entrar</button>
+				</div>
+        </div>
+      </div>
+    </header>
+    <!-- Menu de Navegação -->
+    <div class="azul-escuro">
+      <div class="container">
+        <nav class="menu-nav shadow">
+          <a  href="index.html"> Notícias </a>
+          <a href="legislacao.html"> Legislação </a>
+          <a href="#" target="_blank"> Área do Servidor </a>
+          <a href="#" target="_blank"> Tempo de Serviço </a>
+          <a id="ativo" href="sobre.html"> Sobre </a>
+        </nav>
+      </div>
+    </div>
 
-<head>
-	<title>CRH - Sobre</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<!-- Estilo CSS/Grid  -->
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/grid.css">
-	<!-- Favicon-->
-	<link rel=icon href=img/rn-logo.png sizes="32x32" type="image/png">
-</head>
-<!-- Estrutura do site -->
-
-<body>
-	<header class="header">
-		<div class="container">
-			<div class="grid-6">
-				<a href="index.html"><img class=logo src="img/sus-logo.png"></a>
-				<h1 class="titulo">SESAP-RN </h1>
-				<h2 class="sub-titulo">Coordenadoria de Recursos Humanos</h2>
-			</div>
-			<div class="grid-6">
-				<br> <br>
-				<h2> Area de Login </h2>
-				<br> <br>
-			</div>
-		</div>
-	</header>
-	<!-- Menu de Navegação -->
-	<div class="menu">
-		<div class="container">
-			<nav class="menu-nav">
-				<a  href="index.html" > Notícias </a>
-				<a href="legislacao.html"> Legislação </a>
-				<a href="#"> Área do Servidor </a>
-				<a href="#"> Tempo de Serviço </a>
-				<a id="ativo" href="sobre.html"> Sobre </a>
-			</nav>
-		</div>
-	</div>
-	<!-- Seção -->
-	<section class="conteudo">
-		<div class="container">
-			<p> conteudo </p>
-		</div>
-	</section>
-	<!-- Footer -->
-	<footer class="footer">
-		<div class="container">
-			<div class="grid-5">
-				<a href="http://www.rn.gov.br/" target="_blank"><img class="brasao" src="img/rn-logo.png"></a>
-				<p> Governo do Estado do Rio Grande do Norte</p>
-			</div>
-			<div class="grid-7">
-				<p class=contato> Contato: (84) 3232-2666 | 3232-2839 </p>
-				<p class=contato> hildeberto@rn.gov.br | crh-sesap@rn.gov.br</p>
-			</div>
-		</div>
-	</footer>
-
-</body>
-
+    <!-- Conteudo do sobre -->
+    <section class="conteudo">
+      <div class="container">
+        <!-- Conteudo da legistlação -->
+      </div>
+    </section>
+    <!-- Footer/Rodape -->
+    <footer class="shadow azul-padrao txt-white">
+      <div class="container">
+        <div class="grid-5">
+          <a href="http://www.rn.gov.br/" target="_blank"
+            ><img class="brasao" src="img/rn-logo.png"
+          /></a>
+          <p>Governo do Estado do Rio Grande do Norte</p>
+        </div>
+        <div class="grid-7">
+          <p class="contato">Contato: (84) 3232-2666 | 3232-2839</p>
+          <p class="contato">hildeberto@rn.gov.br | crh-sesap@rn.gov.br</p>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
-
-
-<!--
-*** Comentários ***
-0 - Header
-	<div> Esquerdo (Pagina Inicial)
-	0 Imagem (SUS)
-	1 Titulo (SESAP - RN)
-	2 Subtitulo (Coordenadoria de Recuros Humanos)
-	<div> Direito (Autenticacao)
-	3 Texto (Intranet)
-	4 Form (Categoria) 
-	5 Login (Numerico)
-	6 Senha (Password)
-	7 Botao (Entrar)
-1 - Menu 
-	0 - (Link) Noticias
-	1 - (Link) Area do Servidor
-	2 - (Link) Tempo de Serviço
-	3 - (Link) Sobre
-
-2 - Section (Notícias - Conteúdo Principal)
-	
-	0 - Mostrar Data Atual
-
-	1 - Noticia 1
-			Titulo
-				subtitulo
-	2 - Noticia 3 ...
-	3 - Noticia n
-	4 - (Link) Mais Notícias
-3 - Footer (Rodapé)
-	0 Imagem (Governo do RN)
-	1 Governo do Estado do Rio Grande do Norte | Dia, Mês e Ano | Links Uteis
-	
-	
-	http://servicos.searh.rn.gov.br/protocolo/ (BASEADO)
-	
-
- --->

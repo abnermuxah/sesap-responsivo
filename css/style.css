@@ -5,34 +5,38 @@
 }
 
 img {
-	max-width: 100%;
+	max-width: 60px;
 	float: left
 }
-
 /*--- Cabeçalho | Header --- */
-
-.header {
+.azul-padrao {
 	background: #0080c6;
 }
-header > div {
-	color: #fff;
+.azul-escuro {
+	background: #005aaa;
 }
-.logo {
-	margin-top: 15px;
+.txt-white
+{
+	color: white;
+}
+.logo-sus {
+ margin-top: 15px;
+}
+
+.shadow {
+	text-shadow: 0.1em 0.1em 0.1em #0059aa /*#0059aa*/;
 }
 
 .titulo {
 	display: block;
-  font-size: 2.25em;
+    font-size: 2.25em;
 	font-weight: normal;
-	margin-left: 110px;
+	margin-left: 80px;
 	margin-bottom: 0px;
-	text-shadow: 0.1em 0.1em 0.1em #0059aa;
 }
 .sub-titulo {
 	font-weight: normal;
 	margin-top: 10px;
-	text-shadow: 0.1em 0.1em 0.1em #0059aa;
 }
 /* --- Área de Login ---*/
 /* Botoao de Seleção */
@@ -51,10 +55,18 @@ input, select {
 	padding: 4px 0;
 	font-size: 1em;
 	width:  200px;
+	font-weight: bold;
+	color: #0059aa;
+}
+
+.password {
+	display: inline-block;
 }
 select {
 	cursor: pointer;
+	color: #0059aa;
 }
+
 /* Botao */
 button {
 	padding: 4px 10px;
@@ -63,27 +75,19 @@ button {
 	background: #2e8009;
 	color: #fff;
 	cursor: pointer;
-	border-width: 2px;
 	border-color: #0080c6;
-	text-shadow: 0.1em 0.1em 0.1em #0059aa;
+	margin-bottom: 20px;
 }
 button:hover {
 	background: #338C0A;
 }
 /*Pagina de Navegação*/
-.menu {
-	background: #005aaa;
-}
-.menu-nav {
-	padding-left: 10px;
-	text-shadow: 0.1em 0.1em 0.1em #0059aa;
-}
 
 /*Quando o mouse passar pelo item do menu*/
 
 .menu-nav a:hover {
 	background:  #0071D4;
-
+	text-shadow: 0.1em 0.1em 0.1em #0059aa;
 }
 /*botão ativo*/
 #ativo {
@@ -110,13 +114,12 @@ button:hover {
 }
 
 /*Seção de Conteudo*/
-
 .conteudo {
 	background:#ceedff;
 	min-height: 350px;
 }
 /* Conteudo Titulo */
-.conteudo-titulo {
+.ct-titulo {
 	text-decoration: none;
 	color: #0060b6;
 	font-size: 1.15em;
@@ -125,7 +128,7 @@ button:hover {
 
 
 /* Conteudo Texto */
-.conteudo-texto {
+.ct-texto {
 	text-decoration: none;
 	color: #0060b6;
 	font-size: 1.125em;
@@ -133,7 +136,6 @@ button:hover {
 }
 
 /*Botao de noticias*/
-
 .etiqueta > h3 {
 	padding-left: 0 15px;
 	margin: 0;
@@ -146,7 +148,6 @@ button:hover {
 	margin-bottom: 20px;
 	padding: 0 10px;
 	letter-spacing: 1px;
-
 }
 .etiqueta > a {
 	float: left;
@@ -156,6 +157,7 @@ button:hover {
 	padding: 0 10px;
 	display: block;
 	text-decoration: none;
+	font-weight: bolder;
 }
 
 .etiqueta > a:hover {
@@ -165,11 +167,6 @@ button:hover {
 }
 
 /* Footer - Cabecalho */
-.footer {
-	text-shadow: 0.1em 0.1em 0.1em #0059aa;
-	background: #0080c6;
-	color: #fff;
-}
 
 .brasao {
 	max-width: 39px;
@@ -179,13 +176,10 @@ button:hover {
 	margin-right: 10px;
 }
 
-
-
-footer > p {
-	color: white;
-	float: left;
-}
 .contato {
 	margin-right: 1.875em;
 	float: left;
 }
+
+
+

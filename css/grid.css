@@ -58,10 +58,36 @@
 .grid-12 {
 	width: calc(100% - 20px);
 }
-/*
+
+/* Media Querie (Tablet) */
 @media (max-width: 739px) {
 	.container {
-		max-width: 300px;
+		max-width: 600px;
+	}
+	button {
+		display: inline-block;
+	}
+	.logo-sus {
+		display: block;
+		float: none;
+		margin: auto;
+		padding-top: 20px;
+	}
+	.titulo {
+		margin-left: 0;
+		text-align: center;
+	}
+	.sub-titulo
+	{
+		text-align: center;
+	}
+	/*Area de login*/
+	.login {
+		text-align: center;
+	}
+	.password {
+		display: block;
+		margin-bottom: 20px;
 	}
 	.grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10, .grid-11, .grid-12 {
 		width: 100%;
@@ -69,8 +95,31 @@
 		margin-right: 0px;
 		float: none;
 	}
+	/*Area de menu*/
+	.menu-nav > a {
+		padding: 5px;
+		font-size: 0.75em;
+		font-weight: bolder;
+		width: 18%;
+	}
+	.data {
+		font-size: 0.85em;
+	}
+	.ct-titulo {
+	font-size: 1em;
+	}
+	.ct-texto {
+		font-size: 1em;
+	}
+	.etiqueta > h3 {
+		font-size: 0.75em;
+	}
+
+	.brasao {
+		float: none;
+		display: block;
+	}
 }
 
-*/
 
 

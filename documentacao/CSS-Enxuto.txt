@@ -1,0 +1,5 @@
+cores:
+	azul padrao :
+	azul escuro:
+	vermelho padrao:
+	vermelho escuro:

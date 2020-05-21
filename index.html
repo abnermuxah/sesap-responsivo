@@ -11,24 +11,23 @@
     <script src="https://kit.fontawesome.com/cf1cf54ae0.js" crossorigin="anonymous"></script>
     <!-- Favicon-->
     <link rel=icon href=img/rn-logo.png sizes="32x32" type="image/png">
-    
   </head>
   <!-- Estrutura do site -->
   <body>
-    <header class="header">
+    <header class="azul-padrao">
       <div class="container">
         <!-- Logo + Titulo -->
         <div class="grid-8">
-          <a href="index.html"><img class="logo" src="img/sus-logo.png" /></a>
-          <h1 class="titulo">SESAP-RN</h1>
-          <h2 class="sub-titulo">Coordenadoria de Recursos Humanos</h2>
+          <a  href="index.html"><img class="logo-sus"  src="img/rh-icone.PNG" /></a>
+          <h1 class="titulo shadow txt-white">Portal RH</h1>
+          <h2 class="sub-titulo shadow txt-white">SESAP/RN - Coordenadoria de Recursos Humanos</h2>
         </div>
         <!-- Area de Login -->
-        <div class="grid-4">
-          <div class="select">
+        <div class="grid-4 login">
+          <div class="select txt-white">
             <i class="fas fa-list"></i> 
-            <select class="input-field" name="ddlSistema" id="ddlSistema">
-              <option value="0" hidden>Selecione...</option>
+            <select class="select" required name="" id="">
+              <option value="0" hidden >Selecione...</option>
               <option value="3">Relatórios Ergon</option>
               <option value="1">Controle de Processos</option>
               <option value="6">Avaliação do Servidor</option>
@@ -37,26 +36,24 @@
               <option value="10">Gerenciamento</option>
             </select>
           </div>
-          
           <div>
-            <i class="fas fa-user"></i>
+            <i class="fas fa-user txt-white"></i>
             <input type="text" placeholder="Usuário">
           </div>
           
-          <div style="display: inline-block;">
-            <i class="fas fa-lock"></i>
+          <div class="password">
+            <i class="fas fa-lock txt-white"></i>
             <input type="password" placeholder="Senha">
           </div>
-
-          <button type="button">Entrar</button>
-
+          <button class="shadow button" type="button">Entrar</button>
         </div>
+
       </div>
     </header>
     <!-- Menu de Navegação -->
-    <div class="menu">
+    <div class="azul-escuro">
       <div class="container">
-        <nav class="menu-nav">
+        <nav class="menu-nav shadow">
           <a id="ativo" href="index.html"> Notícias </a>
           <a href="legislacao.html"> Legislação </a>
           <a href="#" target="_blank"> Área do Servidor </a>
@@ -72,37 +69,37 @@
         <!-- Secao que informa a data atual -->
         <p class="data" id="localData"></p>
         <!-- Conteudo Principal -->
-        <a class="conteudo-titulo" href="#">
+        <a class="ct-titulo" href="#">
           16/04/2020 - Escalas de Plantão "06/2020" liberadas para digitação
         </a>
-        <p class="conteudo-texto">
+        <p class="ct-texto">
           Informamos às unidades SESAP que o sistema de escalas já está liberado
           para a digitação dos plantões de Junho/2020.
         </p>
 
-        <a class="conteudo-titulo" href="#">
+        <a class="ct-titulo" href="#">
           18/03/2020 - Escalas de Plantão "05/2020" liberadas para digitação.
         </a>
-        <p class="conteudo-texto">
+        <p class="ct-texto">
           Informamos às unidades SESAP que o sistema de escalas já está liberado
           para a digitação dos plantões de maio/2020.
         </p>
 
-        <a class="conteudo-titulo" href="#">
+        <a class="ct-titulo" href="#">
           12/06/2018 - Listagens da Produtividade GREP MED (04/19) e SUS/SAD
           (05/19) liberadas para atesto das direções</a
         >
-        <p class="conteudo-texto">
+        <p class="ct-texto">
           Solicitamos às Unidades que analisem e atestem, através de suas
           respectivas direções/coordenações, as Fichas Financeiras da
           Produtividade, GREP-MED abril/2019 e GREP´s SUS e SAD maio/2019, pelo
           sistema SEI. Atenciosamente,
         </p>
 
-        <a class="conteudo-titulo" href="#">
+        <a class="ct-titulo" href="#">
           28/06/2017 - Erro na emissão de relatórios da Base ERGON/SEARH</a
         >
-        <p class="conteudo-texto">
+        <p class="ct-texto">
           Informamos a todos os usuários do Portal RH que desde sexta feira
           (23/06) houve um problema na rede de comunicação entre as bases de
           dados CRH/SESAP e ERGON/SEARH, com isso nossos sistemas de RH estão
@@ -117,8 +114,9 @@
         </div>
       </div>
     </section>
+
     <!-- Footer/Rodape -->
-    <footer class="footer">
+    <footer class="shadow azul-padrao txt-white">
       <div class="container">
         <div class="grid-5">
           <a href="http://www.rn.gov.br/" target="_blank"
@@ -127,7 +125,7 @@
           <p>Governo do Estado do Rio Grande do Norte</p>
         </div>
         <div class="grid-7">
-          <p class="contato">Contato: (84) 3232-2666 | 3232-2839</p>
+          <p class="contato">(84) 3232-2666 | 3232-2839</p>
           <p class="contato">hildeberto@rn.gov.br | crh-sesap@rn.gov.br</p>
         </div>
       </div>
