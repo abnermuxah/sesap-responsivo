@@ -1,106 +1,18 @@
-/*Pagina Incial (Geral)*/
-* {
-	box-sizing: border-box;
-	font-family: Arial;
-}
-/*Visualizar a borda das divs*/
+body { margin: 0; padding: 0; }
+nav { width: 100%; background: #333; float: left; padding: 10px 0px; }
+nav ul li { list-style: none; display: inline; }
+nav ul li a { padding: 10px; color: #F00; font: 1.3em Tahoma; }
+#menu, .menu {	display: none; }
 
-img {
-	max-width: 100%;
-	display: block;
-	float: left
-}
+@media screen and (max-width: 480px) {
 
-/*Cabeçalho*/
+	nav { display: none; }
+	#menu:checked ~ nav {
+		display: block;
+	}
+	.menu { display: block; background: #ccc; padding: 10px; float: right; }
+	nav ul { margin: 0; padding: 0; }
+	nav ul li { display: block; padding: 10px 0px; }
+	nav ul li a { width: 100%; float: left; text-align: center; }
 
-.header {
-	background: #0080c6;
-}
-header > div {
-	color: #fff;
-}
-.logo {
-	margin-top: 15px;
-}
-
-.titulo {
-	display: block;
-    font-size: 2.25em;
-	font-weight: normal;
-	margin-left: 110px;
-	margin-bottom: 0px;
-}
-.sub-titulo {
-	font-weight: normal;
-	margin-top: 10px;
-	position: absolute;	
-
-}
-
-
-/*Pagina de Navegação*/
-.menu {
-	background: #005aaa;
-}
-.menu-nav {
-	padding-left: 10px;
-}
-
-/*Quando o mouse passar pelo item do menu*/
-
-.menu-nav a:hover {
-	background:  #0080c6;
-}
-/*botão ativo*/
-#ativo {
-	background: #0080c6;
-	border-bottom: white solid 2px;
-}
-
-
-/*Botao do Menu*/
-
-.menu-nav > a { 
-	text-decoration: none;
-	float: left;
-	color: #fff;
-	padding: 15px;
-	margin-right: 25px;
-	font-size: 1.125em;
-	background: #0060b6;
-	width: 15%;
-	text-align: center;
-}
-
-
-
-
-/*Seção de Conteudo*/
-section{
-	height: 350px;
-}
-
-.footer {
-	background: #ceedff;
-	color: #005aaa;	
-	
-}
-
-.brasao {
-	max-width: 39px;
-	height: auto;
-	display: block;
-	padding-top: 5px;
-	margin-right: 10px;
-}
-
-
-
-footer > p {
-	color: white;
-	float: left;
-}
-.contato {
-	margin-right: 1.875em;
-	float: left;
 }

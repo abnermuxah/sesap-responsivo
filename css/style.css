@@ -29,7 +29,7 @@ img {
 
 .titulo {
 	display: block;
-    font-size: 2.25em;
+  font-size: 2.25em;
 	font-weight: normal;
 	margin-left: 80px;
 	margin-bottom: 0px;
@@ -48,13 +48,14 @@ img {
 i {
 	background: #0059aa;
 	padding: 0.4375em;
+	
 }
 /* input */
 input, select {
 	/* position: absolute;*/
 	padding: 4px 0;
 	font-size: 1em;
-	width:  200px;
+	max-width: 150px;
 	font-weight: bold;
 	color: #0059aa;
 }
@@ -84,6 +85,12 @@ button:hover {
 /*Pagina de Navegação*/
 
 /*Quando o mouse passar pelo item do menu*/
+label {
+	display: none;
+}
+#menu {
+	display: none;
+}
 
 .menu-nav a:hover {
 	background:  #0071D4;
@@ -95,6 +102,8 @@ button:hover {
 	border-bottom: #B59509 solid 4px;
 	text-shadow: 0.1em 0.1em 0.1em #0059aa;
 }
+
+
 
 /*Botao do Menu*/
 .menu-nav > a { 

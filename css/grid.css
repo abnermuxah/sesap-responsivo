@@ -76,6 +76,7 @@
 	.titulo {
 		margin-left: 0;
 		text-align: center;
+		font-size: 2.5em;
 	}
 	.sub-titulo
 	{
@@ -96,12 +97,37 @@
 		float: none;
 	}
 	/*Area de menu*/
+
+	.menu-nav {
+		display: block;
+	}
+	
 	.menu-nav > a {
 		padding: 5px;
-		font-size: 0.75em;
+		font-size: 1em;
 		font-weight: bolder;
-		width: 18%;
+		width: 20%;
+		float: none;
+		display: none;
 	}
+
+	/*Botao menu hamburger*/
+label {
+		display: inline-block;
+}
+label > i {
+	font-size: 30px;
+}
+	#menu, .menu {
+	display: none;
+}
+#menu:checked ~  a {
+	display: block;
+	padding: 10px 80px;
+}
+
+
+
 	.data {
 		font-size: 0.85em;
 	}
@@ -114,10 +140,15 @@
 	.etiqueta > h3 {
 		font-size: 0.75em;
 	}
-
+/*Centralizar o Footer*/
 	.brasao {
 		float: none;
 		display: block;
+		margin: auto;
+	}
+	.contato {
+		float: none;
+		text-align: center;
 	}
 }
 
