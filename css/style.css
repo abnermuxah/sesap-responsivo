@@ -113,7 +113,7 @@ label {
 	padding: 15px;
 	font-size: 1.125em;
 	background: #0060b6;
-	width: 15%;
+	max-width: 25%;
 	text-align: center;
 }
 /*Data*/
