@@ -1,8 +1,3 @@
-/*Visualizar a borda do container
-.container {
-	border-style: ridge;
-}
-*/
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
@@ -59,7 +54,7 @@
 	width: calc(100% - 20px);
 }
 
-/* Media Querie (Tablet) */
+/* Media Querie (Mobile) */
 @media (max-width: 739px) {
 	.container {
 		max-width: 600px;

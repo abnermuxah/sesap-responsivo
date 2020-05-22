@@ -7,9 +7,11 @@
     <!-- Estilo CSS/Grid  -->
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/grid.css" />
-    <script type="text/javascript" src="js/data-atual.js"></script>
+    <!-- Icones (Menu, Usuario, e Senha) -->
     <script src="https://kit.fontawesome.com/cf1cf54ae0.js" crossorigin="anonymous"></script>
-    <!-- Favicon-->
+    <!--script que calcula e exibe a data atual dia-semana, dia mes e ano -->
+    <script type="text/javascript" src="js/data-atual.js"></script>
+    <!-- Favicon-->  
     <link rel=icon href=img/rn-logo.png sizes="32x32" type="image/png">
   </head>
   <!-- Estrutura do site -->
@@ -17,13 +19,13 @@
     <header class="azul-padrao">
       <div class="container">
         <!-- Logo + Titulo -->
-        <div class="grid-6">
-          <a  href="index.html"><img class="logo-sus"  src="img/sus-logo.png" /></a>
-          <h1 class="titulo shadow txt-white">SESAP-RN</h1>
-          <h2 class="sub-titulo shadow txt-white">Coordenadoria de Recursos Humanos</h2>
+        <div class="grid-8">
+          <a  href="index.html"><img class="logo-sus"  src="img/rh-icone.PNG" /></a>
+          <h1 class="titulo shadow txt-white">Portal RH</h1>
+          <h2 class="sub-titulo shadow txt-white">SESAP/RN - Coordenadoria de Recursos Humanos</h2>
         </div>
         <!-- Area de Login -->
-        <div class="grid-6 login">
+        <div class="grid-4 login">
           <div class="select txt-white">
             <i class="fas fa-list"></i> 
             <select class="select" required name="" id="">
@@ -36,19 +38,15 @@
               <option value="10">Gerenciamento</option>
             </select>
           </div>
-          
           <div>
             <i class="fas fa-user txt-white"></i>
             <input type="text" placeholder="Usuário">
           </div>
-          
-          <div style="display: inline-block;">
+          <div class="password">
             <i class="fas fa-lock txt-white"></i>
             <input type="password" placeholder="Senha">
           </div>
-					<div>
-          <button class="shadow" type="button">Entrar</button>
-				</div>
+          <button class="shadow button" type="button">Entrar</button>
         </div>
       </div>
     </header>
@@ -56,21 +54,28 @@
     <div class="azul-escuro">
       <div class="container">
         <nav class="menu-nav shadow">
+          <!-- Adicionar o botao menu e ocultar quando nao esta em tela mobile  -->
+          <input type="checkbox" id="menu">
+          <label for="menu"><i class="fa fa-bars txt-white"></i>
+          </label>
+
+          <!--Opcoes do Menu-->
           <a  href="index.html"> Notícias </a>
-          <a href="legislacao.html"> Legislação </a>
+          <a  href="legislacao.html"> Legislação </a>
           <a href="#" target="_blank"> Área do Servidor </a>
           <a href="#" target="_blank"> Tempo de Serviço </a>
           <a id="ativo" href="sobre.html"> Sobre </a>
         </nav>
       </div>
     </div>
-
-    <!-- Conteudo do sobre -->
+    <!-- Seção de Conteudo -->
     <section class="conteudo">
       <div class="container">
-        <!-- Conteudo da legistlação -->
+        <!-- Conteudo Sobre -->
+      </div>
       </div>
     </section>
+
     <!-- Footer/Rodape -->
     <footer class="shadow azul-padrao txt-white">
       <div class="container">
@@ -78,10 +83,10 @@
           <a href="http://www.rn.gov.br/" target="_blank"
             ><img class="brasao" src="img/rn-logo.png"
           /></a>
-          <p>Governo do Estado do Rio Grande do Norte</p>
+          <p class="contato">Governo do Estado do Rio Grande do Norte</p>
         </div>
         <div class="grid-7">
-          <p class="contato">Contato: (84) 3232-2666 | 3232-2839</p>
+          <p class="contato">(84) 3232-2666 | 3232-2839</p>
           <p class="contato">hildeberto@rn.gov.br | crh-sesap@rn.gov.br</p>
         </div>
       </div>

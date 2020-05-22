@@ -7,9 +7,11 @@
     <!-- Estilo CSS/Grid  -->
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/grid.css" />
+    <!-- Icones (Menu, Usuario, e Senha) -->
+    <script src="https://kit.fontawesome.com/cf1cf54ae0.js" crossorigin="anonymous"></script>
+    <!--script que calcula e exibe a data atual dia-semana, dia mes e ano -->
     <script type="text/javascript" src="js/data-atual.js"></script>
-    <!-- Favicon-->    <script src="https://kit.fontawesome.com/cf1cf54ae0.js" crossorigin="anonymous"></script>
-
+    <!-- Favicon-->  
     <link rel=icon href=img/rn-logo.png sizes="32x32" type="image/png">
   </head>
   <!-- Estrutura do site -->
@@ -40,27 +42,24 @@
             <i class="fas fa-user txt-white"></i>
             <input type="text" placeholder="Usuário">
           </div>
-          
           <div class="password">
             <i class="fas fa-lock txt-white"></i>
             <input type="password" placeholder="Senha">
           </div>
           <button class="shadow button" type="button">Entrar</button>
         </div>
-
       </div>
     </header>
     <!-- Menu de Navegação -->
     <div class="azul-escuro">
       <div class="container">
         <nav class="menu-nav shadow">
-
-          <!-- Adicionar o botao menu antes do nav -->
+          <!-- Adicionar o botao menu e ocultar quando nao esta em tela mobile  -->
           <input type="checkbox" id="menu">
           <label for="menu"><i class="fa fa-bars txt-white"></i>
           </label>
 
-
+          <!--Opcoes do Menu-->
           <a id="ativo" href="index.html"> Notícias </a>
           <a href="legislacao.html"> Legislação </a>
           <a href="#" target="_blank"> Área do Servidor </a>
@@ -111,7 +110,7 @@
           dados CRH/SESAP e ERGON/SEARH, com isso nossos sistemas de RH estão
           temporariamente sem acesso a tais informações, os ...
         </p>
-
+        <!--Etiqueta mostrar mais noticias-->
         <div class="container">
           <div class="etiqueta">
             <h3>Notícias</h3>
@@ -138,18 +137,3 @@
     </footer>
   </body>
 </html>
-
-
-<!--
-
-  icones para adicionar depois
-  (este aquio é para adicionar o botao selecione) 
-  <i class="fas fa-list"></i> 
-  
-  (este aqui é para selecionar o botão menu)
-   <i class="fas fa-bars"></i>
-
--->
-
-
-<!--Este tutoria ensina como estilizar o menu https://gist.github.com/profburnes/5731c73c1687d8a0afc47563a0c7cd81-->
